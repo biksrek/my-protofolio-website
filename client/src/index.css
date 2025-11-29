@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a;
+  --color-secondary: #1e293b;
+  --color-accent: #38bdf8;
+  --color-accent-hover: #0ea5e9;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  --font-sans: 'Inter', sans-serif;
+
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Base Styles */
+body {
+  @apply bg-primary text-text font-sans antialiased overflow-x-hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold tracking-tight;
+}
+
+/* Custom Components */
+.btn-primary {
+  @apply px-6 py-3 bg-accent text-primary font-semibold rounded-lg hover:bg-accent-hover transition-colors duration-300 shadow-lg shadow-accent/20 cursor-pointer inline-flex items-center justify-center;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300 cursor-pointer inline-flex items-center justify-center;
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
+}
+
+.card {
+  @apply bg-secondary p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition-colors duration-300;
+}
