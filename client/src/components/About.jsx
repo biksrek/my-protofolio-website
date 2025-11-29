@@ -3,31 +3,45 @@ import Section from './Section';
 
 const About = () => {
     return (
-        <Section id="about" title="About Me" subtitle="A dedicated Full-Stack Developer with a passion for building exceptional digital experiences.">
+        <Section id="about" title="About Me" subtitle="9+ years building premium websites for influencers and scalable applications for businesses.">
             <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
                     <p className="text-text-muted text-lg leading-relaxed">
-                        With over <span className="text-accent font-semibold">9 years of experience</span> in software development, I have evolved from a curious coder to a Tech Lead, guiding teams and building scalable solutions for diverse industries.
+                        With <span className="text-accent font-semibold">9+ years of experience</span> as a Full-Stack Developer, I specialize in two distinct areas: building premium personal brand websites for influencers, creators, and coaches, and developing scalable web applications for startups and businesses.
                     </p>
                     <p className="text-text-muted text-lg leading-relaxed">
-                        My journey has been defined by a relentless pursuit of quality and performance. Whether it's architecting a complex SaaS platform or crafting a pixel-perfect landing page, I bring the same level of dedication and attention to detail.
+                        I've mastered the art of creating stunning, high-converting websites that help influencers grow their brand, while also architecting complex, enterprise-grade applications using <span className="text-accent font-semibold">React, Node.js, TailwindCSS, MongoDB, and PostgreSQL</span>.
                     </p>
+
+                    {/* Expertise Areas */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div className="bg-secondary/50 p-4 rounded-lg border border-accent/20">
+                            <h4 className="text-accent font-semibold mb-2">Influencer Websites</h4>
+                            <p className="text-text-muted text-sm">Personal brands, media kits, creator portfolios, coaching sites</p>
+                        </div>
+                        <div className="bg-secondary/50 p-4 rounded-lg border border-purple-500/20">
+                            <h4 className="text-purple-400 font-semibold mb-2">Web Applications</h4>
+                            <p className="text-text-muted text-sm">SaaS platforms, dashboards, booking systems, business apps</p>
+                        </div>
+                    </div>
+
+                    {/* Stats */}
                     <div className="grid grid-cols-2 gap-6 pt-4">
                         <div>
                             <h4 className="text-3xl font-bold text-white mb-2">9+</h4>
                             <p className="text-text-muted">Years Experience</p>
                         </div>
                         <div>
-                            <h4 className="text-3xl font-bold text-white mb-2">50+</h4>
+                            <h4 className="text-3xl font-bold text-white mb-2">100+</h4>
                             <p className="text-text-muted">Projects Delivered</p>
                         </div>
                         <div>
-                            <h4 className="text-3xl font-bold text-white mb-2">10+</h4>
+                            <h4 className="text-3xl font-bold text-white mb-2">50+</h4>
                             <p className="text-text-muted">Happy Clients</p>
                         </div>
                         <div>
-                            <h4 className="text-3xl font-bold text-white mb-2">100%</h4>
-                            <p className="text-text-muted">Client Satisfaction</p>
+                            <h4 className="text-3xl font-bold text-white mb-2">MERN</h4>
+                            <p className="text-text-muted">Stack Specialist</p>
                         </div>
                     </div>
                 </div>
@@ -35,27 +49,25 @@ const About = () => {
                 <div className="relative">
                     <div className="absolute inset-0 bg-accent/20 rounded-2xl transform rotate-6 scale-95 blur-lg"></div>
                     <div className="relative bg-secondary p-8 rounded-2xl border border-slate-700">
-                        <h3 className="text-2xl font-bold text-white mb-6">Experience Highlights</h3>
-                        <ul className="space-y-6">
-                            <li className="relative pl-8 border-l-2 border-slate-700">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent"></div>
-                                <h4 className="text-lg font-bold text-white">Tech Lead</h4>
-                                <p className="text-accent text-sm mb-2">Current Role</p>
-                                <p className="text-text-muted text-sm">Leading development of enterprise-grade React applications and mentoring junior developers.</p>
-                            </li>
-                            <li className="relative pl-8 border-l-2 border-slate-700">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600"></div>
-                                <h4 className="text-lg font-bold text-white">Senior Frontend Developer</h4>
-                                <p className="text-accent text-sm mb-2">2018 - 2021</p>
-                                <p className="text-text-muted text-sm">Built high-performance dashboards and web apps for various startups.</p>
-                            </li>
-                            <li className="relative pl-8 border-l-2 border-slate-700">
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-600"></div>
-                                <h4 className="text-lg font-bold text-white">Freelance Developer</h4>
-                                <p className="text-accent text-sm mb-2">2014 - 2018</p>
-                                <p className="text-text-muted text-sm">Delivered 50+ premium websites for influencers and small businesses.</p>
-                            </li>
-                        </ul>
+                        <h3 className="text-2xl font-bold text-white mb-6">Tech Stack Expertise</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="text-accent font-semibold mb-2">Frontend</h4>
+                                <p className="text-text-muted text-sm">React, JavaScript/TypeScript, TailwindCSS, Modern UI/UX</p>
+                            </div>
+                            <div>
+                                <h4 className="text-accent font-semibold mb-2">Backend</h4>
+                                <p className="text-text-muted text-sm">Node.js, Express, RESTful APIs, Authentication</p>
+                            </div>
+                            <div>
+                                <h4 className="text-accent font-semibold mb-2">Database</h4>
+                                <p className="text-text-muted text-sm">MongoDB, PostgreSQL, Database Design</p>
+                            </div>
+                            <div>
+                                <h4 className="text-accent font-semibold mb-2">Specialization</h4>
+                                <p className="text-text-muted text-sm font-semibold">I specialize in MERN + Tailwind for scalable full-stack development.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

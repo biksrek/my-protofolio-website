@@ -4,80 +4,122 @@ import Card from './Card';
 import Button from './Button';
 
 const Projects = () => {
-    const [activeTab, setActiveTab] = useState('web-apps');
+    const [activeTab, setActiveTab] = useState('influencer');
 
     const projects = {
-        'web-apps': [
+        'influencer': [
             {
-                title: "SaaS Analytics Dashboard",
-                category: "SaaS Product",
-                description: "A comprehensive analytics dashboard for a fintech startup, featuring real-time data visualization and reporting tools.",
-                tech: ["React", "Node.js", "D3.js", "MongoDB"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=SaaS+Dashboard"
+                title: "Creator Spotlight",
+                category: "Personal Brand Website",
+                description: "Modern, elegant personal brand website for content creators. Features portfolio showcase, media kit, and brand collaborations section.",
+                tech: ["React", "Tailwind", "Framer Motion"],
+                image: "https://placehold.co/600x400/1e293b/38bdf8?text=Creator+Spotlight"
             },
             {
-                title: "Enterprise CRM System",
-                category: "Business Tool",
-                description: "Custom CRM solution handling 50k+ customer records with automated workflow management and email integration.",
-                tech: ["Next.js", "PostgreSQL", "Redis", "Docker"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=CRM+System"
+                title: "Influencer Pro",
+                category: "Media Kit Portfolio",
+                description: "Comprehensive media kit website showcasing statistics, past collaborations, and booking system for brand partnerships.",
+                tech: ["Next.js", "Tailwind", "Contentful"],
+                image: "https://placehold.co/600x400/1e293b/a855f7?text=Influencer+Pro"
             },
             {
-                title: "E-Learning Platform",
-                category: "EdTech",
-                description: "Full-featured learning management system with video streaming, quizzes, and progress tracking.",
-                tech: ["React", "Express", "AWS S3", "Stripe"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=LMS+Platform"
+                title: "Content Studio",
+                category: "Creator Landing Page",
+                description: "High-converting landing page for social media creators with newsletter signup, sponsor showcase, and content gallery.",
+                tech: ["React", "Tailwind", "Mailchimp API"],
+                image: "https://placehold.co/600x400/1e293b/10b981?text=Content+Studio"
+            },
+            {
+                title: "Model Portfolio",
+                category: "Photography Showcase",
+                description: "Premium photography portfolio website with full-screen galleries, booking calendar, and client testimonials.",
+                tech: ["Gatsby", "Tailwind", "Lightbox"],
+                image: "https://placehold.co/600x400/1e293b/f59e0b?text=Model+Portfolio"
+            },
+            {
+                title: "Coach Hub",
+                category: "Professional Coaching Site",
+                description: "Sleek website for life coaches and consultants with service packages, booking system, and client resources.",
+                tech: ["Next.js", "Tailwind", "Calendly"],
+                image: "https://placehold.co/600x400/1e293b/ef4444?text=Coach+Hub"
+            },
+            {
+                title: "Stream Center",
+                category: "Streamer Brand Site",
+                description: "Dynamic brand website for Twitch/YouTube streamers with schedule, donation widget, and community features.",
+                tech: ["React", "Tailwind", "Twitch API"],
+                image: "https://placehold.co/600x400/1e293b/8b5cf6?text=Stream+Center"
             }
         ],
-        'websites': [
+        'web-apps': [
             {
-                title: "Sophia Laurent Portfolio",
-                category: "Influencer Brand",
-                description: "High-end personal brand website for a luxury lifestyle influencer, focusing on aesthetics and speed.",
-                tech: ["Gatsby", "Tailwind", "Contentful"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=Influencer+Site"
+                title: "Dashboard Pro",
+                category: "Admin Analytics Dashboard",
+                description: "Comprehensive analytics dashboard with real-time data visualization, user management, and customizable reporting tools.",
+                tech: ["React", "D3.js", "Node.js", "MongoDB"],
+                image: "https://placehold.co/600x400/1e293b/38bdf8?text=Dashboard+Pro"
             },
             {
-                title: "TechStart Agency",
-                category: "Agency Website",
-                description: "Modern corporate website for a digital agency with 3D animations and interactive elements.",
-                tech: ["React", "Three.js", "Framer Motion"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=Agency+Site"
+                title: "BookingFlow",
+                category: "Appointment Booking System",
+                description: "Full-featured booking system for service businesses with calendar management, payment processing, and automated reminders.",
+                tech: ["Next.js", "Stripe", "PostgreSQL", "Redis"],
+                image: "https://placehold.co/600x400/1e293b/a855f7?text=BookingFlow"
             },
             {
-                title: "Urban Fashion Store",
-                category: "E-commerce",
-                description: "Headless Shopify storefront with custom product configurator and seamless checkout experience.",
-                tech: ["Next.js", "Shopify API", "Tailwind"],
-                image: "https://placehold.co/600x400/1e293b/38bdf8?text=Fashion+Store"
+                title: "SaaS Starter",
+                category: "Multi-tenant SaaS Platform",
+                description: "Scalable SaaS platform with user authentication, subscription billing, admin panel, and API integration capabilities.",
+                tech: ["React", "Node.js", "PostgreSQL", "Docker"],
+                image: "https://placehold.co/600x400/1e293b/10b981?text=SaaS+Starter"
+            },
+            {
+                title: "TeamSync",
+                category: "Project Management Tool",
+                description: "Collaborative project management application with task tracking, team chat, file sharing, and progress analytics.",
+                tech: ["React", "Express", "MongoDB", "Socket.io"],
+                image: "https://placehold.co/600x400/1e293b/f59e0b?text=TeamSync"
+            },
+            {
+                title: "DataViz Pro",
+                category: "Data Visualization Platform",
+                description: "Advanced data visualization tool for business intelligence with interactive charts, custom dashboards, and export capabilities.",
+                tech: ["React", "D3.js", "Python", "PostgreSQL"],
+                image: "https://placehold.co/600x400/1e293b/ef4444?text=DataViz+Pro"
+            },
+            {
+                title: "E-commerce Hub",
+                category: "Full-stack Shopping Platform",
+                description: "Complete e-commerce solution with product management, shopping cart, payment gateway, and inventory tracking system.",
+                tech: ["Next.js", "Node.js", "Stripe", "MongoDB"],
+                image: "https://placehold.co/600x400/1e293b/8b5cf6?text=Ecommerce+Hub"
             }
         ]
     };
 
     return (
-        <Section id="projects" title="Featured Projects" subtitle="Explore my latest work across complex web apps and premium websites.">
+        <Section id="projects" title="Featured Projects" subtitle="Explore my portfolio of influencer websites and enterprise web applications.">
 
             {/* Tab Switcher */}
             <div className="flex justify-center mb-12">
                 <div className="bg-secondary p-1 rounded-lg inline-flex">
                     <button
-                        onClick={() => setActiveTab('web-apps')}
-                        className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${activeTab === 'web-apps'
-                                ? 'bg-accent text-primary shadow-lg'
-                                : 'text-text-muted hover:text-text'
+                        onClick={() => setActiveTab('influencer')}
+                        className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${activeTab === 'influencer'
+                            ? 'bg-accent text-primary shadow-lg'
+                            : 'text-text-muted hover:text-text'
                             }`}
                     >
-                        Complex Web Apps
+                        Influencer Websites
                     </button>
                     <button
-                        onClick={() => setActiveTab('websites')}
-                        className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${activeTab === 'websites'
-                                ? 'bg-accent text-primary shadow-lg'
-                                : 'text-text-muted hover:text-text'
+                        onClick={() => setActiveTab('web-apps')}
+                        className={`px-6 py-2 rounded-md font-semibold transition-all duration-300 ${activeTab === 'web-apps'
+                            ? 'bg-accent text-primary shadow-lg'
+                            : 'text-text-muted hover:text-text'
                             }`}
                     >
-                        Influencer & Brand Sites
+                        Web Apps & SaaS
                     </button>
                 </div>
             </div>
@@ -94,7 +136,7 @@ const Projects = () => {
                             />
                             <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
-                                    View Details
+                                    View Demo
                                 </Button>
                             </div>
                         </div>

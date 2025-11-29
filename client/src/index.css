@@ -12,6 +12,9 @@
 
   --animate-fade-in: fadeIn 0.5s ease-out forwards;
   --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-float-delayed: float 3s ease-in-out 1.5s infinite;
+  --animate-spin-slow: spin-slow 10s linear infinite;
 
   @keyframes fadeIn {
     0% {
@@ -32,6 +35,26 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
     }
   }
 }
