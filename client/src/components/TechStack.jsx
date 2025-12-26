@@ -3,22 +3,48 @@ import Section from './Section';
 
 const TechStack = () => {
     const technologies = [
-        {
-            category: "Frontend",
-            skills: ["React", "JavaScript/TypeScript", "TailwindCSS", "Next.js", "HTML5/CSS3"]
-        },
-        {
-            category: "Backend",
-            skills: ["Node.js", "Express", "RESTful APIs", "Authentication"]
-        },
-        {
-            category: "Database",
-            skills: ["MongoDB", "PostgreSQL", "Database Design"]
-        }
-    ];
+  {
+    category: "Frontend (Web & UI)",
+    skills: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Redux",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "Framer Motion",
+      "Three.js"
+    ]
+  },
+  {
+    category: "Backend (APIs & Server)",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "GraphQL",
+      "Authentication (JWT, OAuth)",
+      "Python"
+    ]
+  },
+  {
+    category: "Database, DevOps & Tooling",
+    skills: [
+      "MongoDB",
+      "PostgreSQL",
+      "Redis",
+      "Docker",
+      "AWS",
+      "Git & GitHub"
+    ]
+  }
+];
+
 
     return (
-        <Section id="tech-stack" title="Technologies & Tools" subtitle="I specialize in MERN + Tailwind for scalable full-stack development.">
+        <Section id="tech-stack" title="Technologies & Tools" subtitle="My preferred stack for building scalable applications.">
             <div className="grid md:grid-cols-3 gap-8">
                 {technologies.map((tech, index) => (
                     <div key={index} className="bg-secondary/30 p-6 rounded-xl border border-slate-800 hover:border-accent/30 transition-colors duration-300">
@@ -35,18 +61,6 @@ const TechStack = () => {
                         </div>
                     </div>
                 ))}
-            </div>
-
-            {/* MERN Stack Highlight */}
-            <div className="mt-12 text-center">
-                <div className="inline-block bg-accent/10 border border-accent/30 rounded-xl px-8 py-4">
-                    <p className="text-lg font-semibold text-accent">
-                        <span className="text-2xl">⚡</span> MERN Stack Specialist
-                    </p>
-                    <p className="text-text-muted text-sm mt-2">
-                        MongoDB + Express + React + Node.js = Scalable Full-Stack Solutions
-                    </p>
-                </div>
             </div>
         </Section>
     );
