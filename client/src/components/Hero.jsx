@@ -43,7 +43,7 @@ const Hero = () => {
 
               <h1 className="text-4xl md:text-6xl font-bold text-text leading-tight">
                 Hi, I'm{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white inline-block min-w-[300px]">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-white inline-block min-w-[240px] md:min-w-[300px]">
                   {typedText}
                   <span className="animate-pulse">|</span>
                 </span>

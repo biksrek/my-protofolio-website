@@ -37,6 +37,7 @@
 }
 
 /* Base Styles */
+html,
 body {
   @apply bg-primary text-slate-300 font-sans antialiased overflow-x-hidden leading-relaxed;
 }
