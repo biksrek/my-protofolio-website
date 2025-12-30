@@ -4,24 +4,27 @@ import Card from './Card';
 
 const Testimonials = () => {
     const testimonials = [
-        {
-            name: "Sarah Jenkins",
-            role: "CTO, FinFlow Analytics (Fintech Startup)",
-            content: "Bikky delivered a complex SaaS dashboard that exceeded our expectations. His attention to detail and technical expertise are unmatched.",
-            image: "https://placehold.co/100x100/1e293b/38bdf8?text=SJ"
-        },
-        {
-            name: "David Chen",
-            role: "Founder, LuxeBrand (E-commerce)",
-            content: "The portfolio website Bikky built for us significantly increased our conversion rates. It's fast, beautiful, and exactly what we needed.",
-            image: "https://placehold.co/100x100/1e293b/38bdf8?text=DC"
-        },
-        {
-            name: "Emily Rodriguez",
-            role: "Product Director, TechCorp (SaaS Enterprise)",
-            content: "Excellent communication and high-quality development work. Bikky is a true professional who delivers on time and within budget.",
-            image: "https://placehold.co/100x100/1e293b/38bdf8?text=ER"
-        }
+      {
+        name: "Visham Dewan",
+        role: "CEO, www.darjeelingtoursandtravels.in",
+        content:
+          "Bikky delivered a complex SaaS dashboard that exceeded our expectations. His attention to detail and technical expertise are unmatched.",
+        image: "https://placehold.co/100x100/1e293b/38bdf8?text=SJ",
+      },
+      {
+        name: "David Chen",
+        role: "Founder, LuxeBrand (E-commerce)",
+        content:
+          "The portfolio website Bikky built for us significantly increased our conversion rates. It's fast, beautiful, and exactly what we needed.",
+        image: "https://placehold.co/100x100/1e293b/38bdf8?text=DC",
+      },
+      {
+        name: "Emily Rodriguez",
+        role: "Product Director, TechCorp (SaaS Enterprise)",
+        content:
+          "Excellent communication and high-quality development work. Bikky is a true professional who delivers on time and within budget.",
+        image: "https://placehold.co/100x100/1e293b/38bdf8?text=ER",
+      },
     ];
 
     return (
